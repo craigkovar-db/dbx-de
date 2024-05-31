@@ -1,0 +1,19 @@
+{
+  "cluster_type": {
+    "type": "fixed",
+    "value": "dlt"
+  },
+  "spark_version": {
+    "type": "unlimited",
+    "defaultValue": "auto:latest-lts"
+  },
+  "spark_conf.spark.databricks.cluster.profile": {
+    "type": "fixed",
+    "value": "singleNode",
+    "hidden": true
+  }, 
+  "data_security_mode": {
+    "type": "fixed",
+    "value": "SINGLE_USER"
+  }
+}
