@@ -201,7 +201,7 @@ display(spark.read.table("fake_data").count())
 # DBTITLE 1,Define Pandas UDF to extract state from Address
 import pandas as pd
 from typing import Iterator
-from pyspark.sql.functions import col, pandas_udf, struct, PandasUDFType
+from pyspark.sql.functions import col, pandas_udf, struct
 
 @pandas_udf("string")
 def extract_state(address: pd.Series) -> pd.Series:
