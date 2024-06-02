@@ -8,6 +8,10 @@ dbutils.widgets.text("schemaformatted", user_name.split('@')[0].replace(".", "")
 
 # COMMAND ----------
 
+print(f"cleaning up {path}")
+
+# COMMAND ----------
+
 dbutils.fs.rm(path,True)
 
 # COMMAND ----------
